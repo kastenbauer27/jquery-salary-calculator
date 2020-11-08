@@ -8,8 +8,33 @@
     <script src="client.js" charset="utf-8"></script>
     <title>Jquery Salary Calculator</title>
 </head>
-<body>
+<header>
     <h1>Salary Calculator</h1>
-    <p>Calculator Goes Here</p>
+</header>
+<body>
+    <section>
+        <form class="employeeForm">
+            <h3>Fill Out the Fields Below to Add New Employee:</h3>
+            <input id="firstName" type="text" placeholder="First Name"/>
+            <input id="lastName" type="text" placeholder="Last Name"/>
+            <input id="idNumber" type="text" placeholder="ID Number"/>
+            <input id="jobTitle" type="text" placeholder="Job Title"/>
+            <input id="annualSalary" type="number" placeholder="Annual Salary"/>
+            <button id="submitButton">Submit Employee</button>
+        </form>
+    </section>
+    <main>
+    <container class="employeeContainer">
+    <table class="employeeTable">
+        <thead>
+            <td>First Name</td><td>Last Name</td><td>ID</td><td>Title</td><td>Annual Salary</td>
+         </thead>
+        <tbody class="employeeInfo">
+
+        </tbody>
+    </table>
+    <h3 class="totalMonthly">Total Monthly Cost:</h3>
+</container>
+    </main>
 </body>
 </html>

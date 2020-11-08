@@ -1,3 +1,30 @@
 body {
-    background-color: red;
+    background-color: bisque;
+    margin-left: 20px;
+}
+
+.employeeForm {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    padding: 15px;
+    height: 100px;
+    width: 980px;
+}
+
+.employeeTable {
+    margin-top: 20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+td {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+.employeeContainer {
+    margin-top: 20px;
 }
