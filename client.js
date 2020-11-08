@@ -32,6 +32,7 @@ function submitEmployee(event) {
     console.log('new employee is: ', newEmployee);
     employeeArray.push(newEmployee);
     calculateMonthly(newEmployee);
+    $('.employeeInfo').empty();
     appendEmployees();
     $('#firstName').val('');
     $('#lastName').val('');
@@ -43,15 +44,22 @@ function submitEmployee(event) {
 // function to calculate the changing monthly cost after adding more employees
 function calculateMonthly( employee ) {
     console.log('Calculating monthly cost after adding: ', employee);
+    $('.totalMonthly').empty();
     totalMonthly += (employee.annualSalary / 12);
     console.log('New monthly cost is: ', totalMonthly);
-    $('.totalMonthly').append(`Total Monthly Cost: ${totalMonthly}`);
+    let newMonthly = `<p>Total Monthly Cost: ${totalMonthly}</p>`;
+    if( totalMonthly > 20000 ){
+        $('.totalMonthly').append(newMonthly);
+        $('.totalMonthly').addClass('red');
+    } else {
+        $('.totalMonthly').append(newMonthly);
+    }
 }
 
 // append employees to table on DOM by looping through employee array
 function appendEmployees() {
     for (let employee of employeeArray){
-
+        
         $('.employeeInfo').append(`
         <tr>
         <td>${employee.firstName}</td>
