@@ -11,9 +11,9 @@ Jquery Salary Calculator
 
 ## Description
 
-_Duration: 2 Week Sprint_
+_Duration: 12 hours_
 
-This app allows you to add employees and see how much it will cost to pay them.
+This app allows you to add employees and see how much it will cost monthly to pay them.
 
 ## Screen Shot
 
@@ -21,37 +21,24 @@ Include one or two screen shots of your project here (optional). Remove if unuse
 
 ### Prerequisites
 
-Link to software that is required to install the app (e.g. node).
-
-- [Node.js](https://nodejs.org/en/)
-- List other prerequisites here
+None
 
 ## Installation
 
 Open the index.html file in your web browser and you are good to go!
 
 ## Usage
-How does someone use this application? Tell a user story here.
 
-1. xxx
-2. xxx
-3. xxx
-4. xxx
-5. xxx
-6. xxx
+Someone would use this app by entering employee information into the input fields, generating a table which keeps all entered employee information. An updated company monthly cost is displayed below the table, alerting the user when total monthly costs are greater than $20,000. Employees may also be deleted from the table, removing their monthly salary cost from the total monthly cost.
 
 
 ## Built With
 
-List technologies and frameworks here
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
-
-_Note, include this only if you have a license file. GitHub will generate one for you if you want!_
+JQuery
+Javascript
+HTML
+CSS
 
 ## Acknowledgement
-Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. (Thank your people)
+Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. 
 
-## Support
-If you have suggestions or issues, please email me at [youremail@whatever.com](www.google.com)

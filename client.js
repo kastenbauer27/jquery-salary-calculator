@@ -16,6 +16,7 @@ let newEmployee = {
 function onReady() {
     console.log('Hi from JQ!');
     $('#submitButton').on('click', submitEmployee);
+    $('.employeeInfo').on('click', '.deleteButton', removeEmployee);
 }
 
 // function to handle click event and change values of newEmployee object and call calculator function
@@ -49,11 +50,9 @@ function calculateMonthly( employee ) {
     console.log('New monthly cost is: ', totalMonthly);
     let newMonthly = `<p>Total Monthly Cost: ${totalMonthly}</p>`;
     if( totalMonthly > 20000 ){
-        $('.totalMonthly').append(newMonthly);
         $('.totalMonthly').addClass('red');
-    } else {
-        $('.totalMonthly').append(newMonthly);
-    }
+    } 
+    $('.totalMonthly').append(newMonthly);
 }
 
 // append employees to table on DOM by looping through employee array
@@ -67,9 +66,17 @@ function appendEmployees() {
         <td>${employee.iD}</td>
         <td>${employee.jobTitle}</td>
         <td>${employee.annualSalary}</td>
+        <td><button class="deleteButton">DELETE</button></td>
         </tr>
         `);
     }
+}
+
+// remove employee from table on click of delete button by targeting the closest 'tr'
+function removeEmployee() {
+    console.log('Are you sure you want to delete');
+    alert('Are you sure you want to delete this employee?');
+    $(this).closest('tr').remove();
     
 }
 
