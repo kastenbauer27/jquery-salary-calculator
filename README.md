@@ -1,10 +1,4 @@
 
-
-![MIT LICENSE](https://img.shields.io/github/license/scottbromander/the_marketplace.svg?style=flat-square)
-![REPO SIZE](https://img.shields.io/github/repo-size/scottbromander/the_marketplace.svg?style=flat-square)
-![TOP_LANGUAGE](https://img.shields.io/github/languages/top/scottbromander/the_marketplace.svg?style=flat-square)
-![FORKS](https://img.shields.io/github/forks/scottbromander/the_marketplace.svg?style=social)
-
 # Project Name
 
 Jquery Salary Calculator
@@ -14,10 +8,6 @@ Jquery Salary Calculator
 _Duration: 12 hours_
 
 This app allows you to add employees and see how much it will cost monthly to pay them.
-
-## Screen Shot
-
-Include one or two screen shots of your project here (optional). Remove if unused.
 
 ### Prerequisites
 

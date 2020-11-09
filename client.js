@@ -49,10 +49,12 @@ function calculateMonthly( employee ) {
     totalMonthly += (employee.annualSalary / 12);
     console.log('New monthly cost is: ', totalMonthly);
     let newMonthly = `<p>Total Monthly Cost: ${totalMonthly}</p>`;
+    let costTooHigh = `<p style="color:red">Total Monthly Cost: ${totalMonthly}</p>`;
     if( totalMonthly > 20000 ){
-        $('.totalMonthly').addClass('red');
-    } 
-    $('.totalMonthly').append(newMonthly);
+        $('.totalMonthly').append(costTooHigh);
+    } else {
+        $('.totalMonthly').append(newMonthly);
+    }
 }
 
 // append employees to table on DOM by looping through employee array
@@ -77,6 +79,6 @@ function removeEmployee() {
     console.log('Are you sure you want to delete');
     alert('Are you sure you want to delete this employee?');
     $(this).closest('tr').remove();
-    
+
 }
 

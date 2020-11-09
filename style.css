@@ -43,6 +43,12 @@ td {
     border-width: 2px;
 }
 
+tr {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
 .employeeContainer {
     margin-top: 20px;
 }
