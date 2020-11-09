@@ -1,3 +1,15 @@
+header {
+    background-color: cadetblue;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 25px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 body {
     background-color: bisque;
     margin-left: 20px;
@@ -10,13 +22,19 @@ body {
     padding: 15px;
     height: 100px;
     width: 980px;
+    margin-left: 140px;
+    background-color: cadetblue;
 }
 
 .employeeTable {
     margin-top: 20px;
+    margin-left: 270px;
+    margin-bottom: 10px;
+    width: 730px;
     border-style: solid;
     border-color: black;
     border-width: 2px;
+    background-color: cadetblue;
 }
 
 td {
@@ -27,4 +45,8 @@ td {
 
 .employeeContainer {
     margin-top: 20px;
+}
+
+.totalMonthly {
+    margin-left: 270px;
 }
